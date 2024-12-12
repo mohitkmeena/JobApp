@@ -31,6 +31,10 @@ public class JobController {
     public String contact() {
         return "contact";
     }
+	@RequestMapping("/portfolio")
+    public String portfolio() {
+        return "portfolio";
+    }
 
 	// ************************************************************************
 

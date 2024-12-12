@@ -15,7 +15,7 @@ public class JobService {@Autowired
 	
 	//method to return all JobPosts
 	public List<JobPost> returnAllJobPosts() {
-		return repo.returnAllJobPosts();
+		return repo.findAll();
 
 		
 	}
@@ -23,16 +23,10 @@ public class JobService {@Autowired
 	
 	
 	
-
-	// ***************************************************************************
-
-
-	
-	
 	
 	// method to add a jobPost
 	public void addJobPost(JobPost jobPost) {
-		 repo.addJobPost(jobPost);
+		 repo.save(jobPost);
 	
 	}
 }
